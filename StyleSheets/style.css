@@ -1,0 +1,158 @@
+/* Background Image setup */
+
+    .logos {
+        width: 170px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+    }
+
+    .background {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url("../Images/bg-desktop.png");
+        height: 100vh;
+        position: relative;
+        background-size: 101% 101%;
+        background-repeat: no-repeat;
+        background-position: -130px 50%;
+    }
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding: 35px 50px;
+        width: fit-content;
+    }
+
+/* Top section */
+
+    .logo {
+        object-fit: contain;
+        width: 180px;
+    }
+
+/* middle section container */
+
+    .center_container {
+        display: flex;
+        align-items: center;
+        height: 70vh;
+    }
+
+/* Content */
+
+    .Convo_img{
+        width: 640px;
+    }
+
+    /* text */
+
+    .Main-LeftSide_container {
+
+        max-width: 420px;
+        padding: 0px 50px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+        margin-top: -130px;
+        
+    }
+
+    .header {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600; 
+        font-size: 35px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+/* Bottom section */
+
+.Button {
+    padding: 0.7em 3.5em;
+    border: none;
+    font-size: 14px;
+    border-radius: 40px;
+    color: hsl(257, 40%, 49%);
+    cursor: pointer;
+    width: fit-content;
+    box-shadow: 2px 2px 10px rgb(52, 52, 52);
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.Button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+@media screen and (max-width:400px) {
+
+    p {
+        text-align: center;
+    }
+
+    .logos {
+        height: fit-content;
+        position: absolute;
+        bottom: 20px;
+        right: 0%;
+        left: 28%;
+    }
+
+    .background {
+        background-color: hsl(257, 40%, 49%);
+        background-image: url("../Images/bg-mobile.png");
+        height: 130vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0px 0%;
+    }
+
+    .main_container {
+        display: flex;
+        flex-direction: column;
+        padding: 45px;
+        gap: 0px;
+    }
+
+    .center_container {
+        flex-direction: column;
+    }
+
+    .header {
+        font-size: 23px;
+    }
+
+    .logo {
+        padding-bottom: 30px;
+        margin-left: -10px;
+        width: 53%;
+    }
+
+    .Convo_img {
+        width: 105%;
+        padding: 22px 0px 45px 0px;
+    }
+
+    .Main-LeftSide_container {
+        align-items: center;
+        margin: 0px;
+        padding: 0px 5px;
+        font-size: 15px;
+        max-width: fit-content;
+        
+    }
+
+    .description {
+        line-height: 22px;
+    }    
+}
